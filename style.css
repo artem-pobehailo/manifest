@@ -62,7 +62,7 @@ background-repeat: no-repeat;
 font-weight: 600;
 font-size: 30px;
 
-/* line-height: 50px; */ 
+
 line-height: 1.66667;
 letter-spacing: 0.05em;
 color: #000;
@@ -73,7 +73,7 @@ color: #000;
 font-weight: 400;
 font-size: 48px;
 
-/* line-height: 64px; */ 
+
 line-height: 1.33333;
 letter-spacing: 0.05em;
 color: #000;
@@ -86,7 +86,7 @@ text-align: center;
 font-weight: 400;
 font-size: 16px;
 
-/* line-height: 27px; */ 
+ 
 line-height: 1.66;
 letter-spacing: 0.1em;
 color: #7b7b7b;
@@ -97,7 +97,7 @@ padding-bottom: 30px;
 font-weight: 500;
 font-size: 22px;
 
-/* line-height: 37px; */ 
+
 line-height: 1.66;
 letter-spacing: 0.1em;
 color: #000;
@@ -109,7 +109,7 @@ padding-bottom: 10px;
 font-weight: 400;
 font-size: 16px;
 
-/* line-height: 27px; */ 
+
 line-height: 1.66;
 letter-spacing: 0.1em;
 color: #7b7b7b;
@@ -121,7 +121,7 @@ padding-bottom: 40px;
 font-weight: 400;
 font-size: 16px;
 
-/* line-height: 27px; */ 
+
 line-height: 1.66;
 letter-spacing: 0.05em;
 color: #565656;
@@ -139,7 +139,7 @@ padding-bottom: 37px;
 font-weight: 600;
 font-size: 28px;
 
-/* line-height: 36px; */ 
+
 line-height: 1.28571;
 letter-spacing: 0.05em;
 text-align: center;
@@ -154,7 +154,7 @@ font-family: "Lato", sans-serif;
 font-weight: 400;
 font-size: 16px;
 
-/* line-height: 27px; */ 
+ 
 line-height: 1.66;
 letter-spacing: 0.1em;
 color: #7b7b7b;
@@ -170,7 +170,7 @@ padding-bottom: 30px;
 font-weight: 400;
 font-size: 16px;
 
-/* line-height: 27px; */ 
+
 line-height: 1.66;
 letter-spacing: 0.1em;
 color: #7b7b7b;
@@ -180,7 +180,7 @@ font-family: "Red Hat Display", sans-serif;
 font-weight: 500;
 font-size: 22px;
 
-/* line-height: 37px; */ 
+
 line-height: 1.66;
 letter-spacing: 0.1em;
 color: #000;
@@ -192,7 +192,7 @@ padding-bottom: 20px;
 font-weight: 400;
 font-size: 16px;
 
-/* line-height: 27px; */ 
+
 line-height: 1.66;
 letter-spacing: 0.05em;
 color: #565656;
@@ -207,7 +207,7 @@ padding-bottom: 50px;
 font-weight: 700;
 font-size: 16px;
 
-/* line-height: 27px; */ 
+
 line-height: 1.66;
 letter-spacing: 0.1em;
 color: #fff;
@@ -231,7 +231,7 @@ justify-content: center;
 font-weight: 400;
 font-size: 18px;
 
-/* line-height: 32px; */ 
+
 line-height: 1.77778;
 letter-spacing: 0.05em;
 color: #565656;
@@ -264,7 +264,7 @@ font-family: "Lato", sans-serif;
 font-weight: 400;
 font-size: 18px;
 
-/* line-height: 30px; */ 
+
 line-height: 1.66;
 letter-spacing: 0.1em;
 
@@ -281,7 +281,7 @@ padding-bottom: 40px;
 font-weight: 400;
 font-size: 16px;
 
-/* line-height: 27px; */ 
+ 
 line-height: 1.66;
 letter-spacing: 0.1em;
 text-align: center;
@@ -409,12 +409,17 @@ flex-direction: row-reverse;
  @media screen and (min-width: 1440px) {
 
 .header{
-min-width: 1440px;
+max-width: 1440px;
+width: 100%;
+min-width: auto;
+ margin: 0 auto;
     padding: 40px 130px;
  }
  .container{
-  
- min-width: 1440px;
+ max-width: 1440px;
+width: 100%;
+min-width: auto;
+ margin: 0 auto;
    padding: 70px 130px 0 130px;
  
  }
@@ -437,44 +442,39 @@ height: 600px;
 }
 
 .blog-item{
-  display: flex;
-  gap: 30px;
+    display: flex;
+        flex-direction: row;    
+        align-items: center;
+    justify-content: space-between;
+        gap: 30px;
+        width: 100%;
 }
 
-.blog-item-first{
-  width: 50%;
-   height: 470px;
-}
-.post-image{
-  width: 50%;
-   height: 470px;
-}
+.blog-item.first {
+        flex-direction: row-reverse; 
+    }
 
-/* .blog-item-first{
+   .blog-item-first {
+      
+        width: calc(50% - 15px); 
+        height: auto;
+        text-align: left;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
 
- width: 570px;
- height: 470px;
- display: flex;
- flex-direction: column;
- text-align: center;
- align-items: center;
- justify-content: center;
-}
+  .post-image {
+        width: calc(50% - 15px); 
+        height: 470px;
+    }
+   .image {
+        width: 100%; 
+        height: 100% ;
+        object-fit: cover; 
+    }
 
-.post-image{
-  width: 570px;
-  height: 470px;
-}
 
-.image{
-  width: 570px;
-  height: 470px;
-} */
-
-.image{
-  width: 570px;
-  height: 470px;
-} 
 .posts-list{
   display: flex;
   flex-direction: row;
