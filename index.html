@@ -11,30 +11,48 @@
   </head>
   <body>
     <header class="header">
-      <a href="." class="logo"
-        ><svg class="" width="145" height="14">
-          <use href="./img/sprite.svg#icon-Logo"></use></svg
-      ></a>
-      <div class="icons">
-        <div class="search-icon">
-          <svg class="" width="20" height="20">
-            <use href="./img/sprite.svg#icon-search"></use>
-          </svg>
+     <div class="header-container">
+        <a href="." class="logo"
+          ><svg class="" width="145" height="14">
+            <use href="./img/sprite.svg#icon-Logo"></use></svg
+        ></a>
+  
+   <nav class="main-nav">
+        <ul class="nav-list">
+          <li><a href="#Home">Home</a></li>
+          <li><a href="#About">About</a></li>
+          <li><a href="#Works">Works</a></li>
+          <li><a href="#Blog">Blog</a></li>
+          <li><a href="#Contact">Contact</a></li>
+  
+  
+        </ul>
+      </nav>
+  
+        <div class="icons">
+          <div class="search-icon">
+            <svg class="" width="20" height="20">
+              <use href="./img/sprite.svg#icon-search"></use>
+            </svg>
+          </div>
+          <div class="menu-icon">
+            <svg class="" width="34" height="22">
+              <use href="./img/sprite.svg#icon-hamburger1"></use>
+            </svg>
+          </div>
         </div>
-        <div class="menu-icon">
-          <svg class="" width="34" height="22">
-            <use href="./img/sprite.svg#icon-hamburger1"></use>
-          </svg>
-        </div>
-      </div>
+     </div>
+
     </header>
-    <div class="container hero-section">
+
+
+    <div class="container hero-section" id="Home">
       <h1 class="hero-titel">
         Manifest is a newborn theme. Clean, simple and fast.
       </h1>
     </div>
 
-    <div class="container blog-section">
+    <div class="container blog-section" id="Blog">
 
       
       <article class="blog-post">
@@ -88,7 +106,7 @@
     </div>
  <div class="container posts-section">
 
-  <section class=" latest-posts">
+  <section class=" latest-posts" id="Works">
     
     <div class="section-header">
         <h2 class="section-title">Latest Posts</h2>
@@ -144,7 +162,7 @@
  </div>
 
 <div class="container">
-   <section class=" popular-posts">
+   <section class=" popular-posts"  id="About">
     
       <div class="section-header">
           <h2 class="section-title">The Most Popular</h2>
@@ -194,7 +212,7 @@
   </section>
 </div>
 
-<div class="container section-time">
+<div class="container section-time" >
 
  
 
@@ -215,7 +233,7 @@ We focus on naming, branding, brand narratives, website design and development, 
 
 </div>
 
-<footer class="footer container">
+<footer class="footer container" id="Contact">
   <div class="footer-one">
       <div class="footer-one-title">
         <h2 class="footer-title">Need a project?</h2>
